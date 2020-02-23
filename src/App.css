@@ -1,0 +1,75 @@
+/* DEFAULT VERSION */
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+  background-color: #2980b9;
+}
+
+/* Navbar */
+nav {
+  margin-bottom: 50px;
+}
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+.navbar-brand {
+  font-family: Viga;
+  font-size: 32px;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+/* Utility */
+.button {
+  text-transform: uppercase;
+  border-radius: 40px;
+  background-color: #2980b9 !important;
+}
+
+/*content */
+iframe {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.particles {
+  margin-top: -80%;
+  height: 100%;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar-brand,
+  .nav-link {
+    color: black;
+  }
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #2980b9;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .video {
+    width: 600px;
+    height: 370px;
+  }
+  .particles {
+    margin-top: -50%;
+  }
+}
